@@ -5,11 +5,18 @@ using SQLite;
 
 namespace RHttpServer.Plugins.External
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class SimpleSQLiteDatatase : RPlugin, IDisposable
     {
         private readonly SQLiteConnection _dbCon;
         private readonly object _dbLock = new object();
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="dbPath"></param>
         public SimpleSQLiteDatatase(string dbPath)
         {
             _dbCon = new SQLiteConnection(dbPath);

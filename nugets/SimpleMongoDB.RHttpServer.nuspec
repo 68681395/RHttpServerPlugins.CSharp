@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>SimpleMongoDB.RHttpServer</id>
+    <version>1.0.0.0</version>
+    <title>SimpleMongoDB.RHttpServer</title>
+    <authors>Rosenbjerg Softworks</authors>
+    <owners>Rosenbjerg Softworks</owners>
+    <licenseUrl>https://www.gnu.org/licenses/gpl-3.0.txt</licenseUrl>
+    <projectUrl>https://github.com/rosenbjerg/RHttpServerPlugins.CSharp</projectUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <description>
+Simple MongoDB plugin for RHttpServer using the official MongoDB driver
+	</description>
+	<summary>
+
+	</summary>
+    <releaseNotes>First release</releaseNotes>
+    <copyright>Copyright 2016</copyright>
+    <tags>MongoDB RHttpServer mongo database rplugin</tags>
+  <dependencies>
+  <group targetFramework="net452">
+	  <dependency id="MongoDB.Bson" version="2.2.4"/>
+	  <dependency id="MongoDB.Driver" version="2.2.4"/>
+	  <dependency id="MongoDB.Driver.Core" version="2.2.4"/>
+	  <dependency id="RHttpServer" version="1.0.1.4"/>
+	  <dependency id="ServiceStack.Text" version="4.5.0"/>
+	</group>
+</dependencies>
+  </metadata>
+  <files>
+    <file src="bin\SimpleMongoDB.RHttpServer.dll" target="lib\Net40" />
+    <file src="bin\SimpleMongoDB.RHttpServer.xml" target="lib" />
+  </files>
+</package>

@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>SimpleSQLite.RHttpServer</id>
+    <version>1.0.0.0</version>
+    <title>SimpleSQLite.RHttpServer</title>
+    <authors>Rosenbjerg Softworks</authors>
+    <owners>Rosenbjerg Softworks</owners>
+    <licenseUrl>https://www.gnu.org/licenses/gpl-3.0.txt</licenseUrl>
+    <projectUrl>https://github.com/rosenbjerg/RHttpServerPlugins.CSharp</projectUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <description>
+Simple SQLite plugin for RHttpServer using the SQLite-net
+	</description>
+	<summary>
+
+	
+	</summary>
+    <releaseNotes>First release</releaseNotes>
+    <copyright>Copyright 2016</copyright>
+    <tags>SQLite RHttpServer database rplugin</tags>
+  <dependencies>
+  <group targetFramework="net452">
+	  <dependency id="sqlite-net" version="1.0.8"/>
+	  <dependency id="RHttpServer" version="1.0.1.4"/>
+	  <dependency id="ServiceStack.Text" version="4.5.0"/>
+	</group>
+</dependencies>
+  </metadata>
+  <files>
+    <file src="bin\SimpleSQLite.RHttpServer.dll" target="lib\Net40" />
+    <file src="bin\SimpleSQLite.RHttpServer.xml" target="lib" />
+  </files>
+</package>
