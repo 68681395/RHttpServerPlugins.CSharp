@@ -23,8 +23,7 @@ Simple MongoDB plugin for RHttpServer using the official MongoDB driver
 	  <dependency id="MongoDB.Bson" version="2.2.4"/>
 	  <dependency id="MongoDB.Driver" version="2.2.4"/>
 	  <dependency id="MongoDB.Driver.Core" version="2.2.4"/>
-	  <dependency id="RHttpServer" version="1.0.1.4"/>
-	  <dependency id="ServiceStack.Text" version="4.5.0"/>
+	  <dependency id="RHttpServer" version="1.0.2.3"/>
 	</group>
 </dependencies>
   </metadata>

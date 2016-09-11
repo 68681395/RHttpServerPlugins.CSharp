@@ -14,7 +14,7 @@ namespace RHttpServer.Plugins.External
         /// </summary>
         /// <param name="url"></param>
         /// <param name="port"></param>
-        public SimpleMongoDBConnection(string url, int port = 80)
+        public SimpleMongoDBConnection(string url, int port = 27017)
         {
             _client = new MongoClient($"{url}:{port}");
         }

@@ -10,7 +10,7 @@
     <projectUrl>https://github.com/rosenbjerg/RHttpServerPlugins.CSharp</projectUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <description>
-Simple SQLite plugin for RHttpServer using the SQLite-net
+Simple SQLite plugin for RHttpServer using the SQLite-net by Frank A. Krueger
 	</description>
 	<summary>
 
@@ -21,9 +21,7 @@ Simple SQLite plugin for RHttpServer using the SQLite-net
     <tags>SQLite RHttpServer database rplugin</tags>
   <dependencies>
   <group targetFramework="net452">
-	  <dependency id="sqlite-net" version="1.0.8"/>
-	  <dependency id="RHttpServer" version="1.0.1.4"/>
-	  <dependency id="ServiceStack.Text" version="4.5.0"/>
+	  <dependency id="RHttpServer" version="1.0.2.3"/>
 	</group>
 </dependencies>
   </metadata>
