@@ -1670,7 +1670,7 @@ namespace SQLite
 				GetByPrimaryKeySql = string.Format ("select * from \"{0}\" where \"{1}\" = ?", TableName, PK.Name);
 			}
 			else {
-				// People should not be calling Find/Find without a PK
+				// People should not be calling Get/Find without a PK
 				GetByPrimaryKeySql = string.Format ("select * from \"{0}\" limit 1", TableName);
 			}
 		}
@@ -2675,7 +2675,7 @@ namespace SQLite
 					}
 					
 					//
-					// Find the member value
+					// Get the member value
 					//
 					object val = null;
 					
