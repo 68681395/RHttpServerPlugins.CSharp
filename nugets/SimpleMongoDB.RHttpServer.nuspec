@@ -13,7 +13,7 @@
 Simple MongoDB plugin for RHttpServer using the official MongoDB driver
 	</description>
 	<summary>
-
+MongoDB plugin for RHttpServer, using the official MongoDB C# driver
 	</summary>
     <releaseNotes>Changed target framework</releaseNotes>
     <copyright>Copyright 2016</copyright>
