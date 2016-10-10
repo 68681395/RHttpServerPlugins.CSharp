@@ -34,8 +34,8 @@
     <DocumentationFile>bin\Release\SimpleSQLite.RHttpServer.xml</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="RHttpServer, Version=1.0.1.4, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\RHttpServer.1.0.1.4\lib\Net40\RHttpServer.dll</HintPath>
+    <Reference Include="RHttpServer, Version=1.0.3.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\RHttpServer.1.0.3.1\lib\net45\RHttpServer.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="ServiceStack.Text, Version=4.5.0.0, Culture=neutral, processorArchitecture=MSIL">
