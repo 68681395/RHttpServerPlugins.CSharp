@@ -37,6 +37,16 @@ namespace RHttpServer.Plugins.External
         }
 
         /// <summary>
+        /// Returns the count for table with specified name
+        /// </summary>
+        /// <param name="tableName"></param>
+        /// <returns></returns>
+        public int GetCount(string tableName)
+        {
+            return _dbCon.GetTableInfo(tableName).Count;
+        }
+
+        /// <summary>
         /// Attemps to retrieve the object using the primary key
         /// </summary>
         /// <typeparam name="T"></typeparam>
@@ -45,10 +55,7 @@ namespace RHttpServer.Plugins.External
         public T Get<T>(object primaryKey)
             where T : new()
         {
-            lock (_dbLock)
-            {
-                return _dbCon.Get<T>(primaryKey);
-            }
+            return _dbCon.Get<T>(primaryKey);
         }
 
         /// <summary>
@@ -60,10 +67,7 @@ namespace RHttpServer.Plugins.External
         public T FindOne<T>(Expression<Func<T, bool>> predicate)
             where T : new()
         {
-            lock (_dbLock)
-            {
-                return _dbCon.Find(predicate);
-            }
+            return _dbCon.Find(predicate);
         }
 
         /// <summary>
@@ -75,10 +79,7 @@ namespace RHttpServer.Plugins.External
         public IEnumerable<T> Find<T>(Expression<Func<T, bool>> predicate)
             where T : new()
         {
-            lock (_dbLock)
-            {
-                return _dbCon.Table<T>().Where(predicate);
-            }
+            return _dbCon.Table<T>().Where(predicate);
         }
 
         /// <summary>

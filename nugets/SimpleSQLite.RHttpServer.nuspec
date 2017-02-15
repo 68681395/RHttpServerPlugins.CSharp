@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>SimpleSQLite.RHttpServer</id>
-    <version>1.0.0.1</version>
+    <version>1.0.0.3</version>
     <title>SimpleSQLite.RHttpServer</title>
     <authors>Rosenbjerg Softworks</authors>
     <owners>Rosenbjerg Softworks</owners>
@@ -16,7 +16,7 @@ Simple SQLite plugin for RHttpServer using the SQLite-net by Frank A. Krueger
 SQLite plugin for RHttpServer, using SQLite-net by Frank A. Krueger.
 Comes with SQLite-net source, due to the way SQLite-net is published
 	</summary>
-    <releaseNotes>Changed target framework</releaseNotes>
+    <releaseNotes>Added GetCount method</releaseNotes>
     <copyright>Copyright 2016</copyright>
     <tags>SQLite RHttpServer database rplugin</tags>
   <dependencies>
@@ -26,7 +26,7 @@ Comes with SQLite-net source, due to the way SQLite-net is published
 </dependencies>
   </metadata>
   <files>
-    <file src="bin\SimpleSQLite.RHttpServer.dll" target="lib\net45" />
-    <file src="bin\SimpleSQLite.RHttpServer.xml" target="lib" />
+    <file src="..\RHttpServerPlugins\SimpleSQLiteDb.RHttpServer\bin\Release\SimpleSQLite.RHttpServer.dll" target="lib\net45" />
+    <file src="..\RHttpServerPlugins\SimpleSQLiteDb.RHttpServer\bin\Release\SimpleSQLite.RHttpServer.xml" target="lib" />
   </files>
 </package>
